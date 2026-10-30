@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Dev Studio | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="/" class="logo">
+        <span class="logo-badge">ADS</span>
+        <span class="logo-text">Ayush Dev Studio</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/contact" class="btn btn-nav">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <span class="section-tag">Get in Touch</span>
+            <h2>Let’s connect</h2>
+            <p>
+              Send me a message with any questions or project details. I will get back to you as soon as possible.
+            </p>
+            <div class="contact-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <p>India (Available for remote work)</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <p>ayush@ayushdevstudio.com</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">⏱️</span>
+                <div>
+                  <strong>Response Time</strong>
+                  <p>Within 24 hours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <p style="font-size: 0.85rem; margin: 4px 0 15px; color: #64748b;">
+              Fill in the details below to send a message to the backend.
+            </p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email *</label>
+                <input type="email" id="email" name="email" placeholder="e.g. rahul@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service">
+                  <option value="Landing Page">Landing Page</option>
+                  <option value="Web App / API">Web App / API</option>
+                  <option value="Bug Fix / Maintenance">Bug Fix / Maintenance</option>
+                  <option value="General Question">General Question</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                Send Message
+              </button>
+            </form>
+
+            <div id="formAlert" class="alert-box hidden"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Ayush Dev Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
